@@ -19,13 +19,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   
   .account-desc-container {
     background-color: #3F86FF;
     color: #FFF;
     padding: 20px 0;
-    justify-content: center;
   }
   
   .divider{
@@ -396,7 +396,7 @@ body {
     border-bottom-right-radius: 5px;
   }
   
-  /*** Laptops / Desktops | 1025px to 1280px ***/
+  /*** Laptops / Desktops | 1025px and up ***/
   @media (min-width: 1025px) {
     
     body {
