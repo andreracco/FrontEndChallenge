@@ -105,7 +105,7 @@ body {
     height: 2px;
     border: 0;
     border-top: 2px solid #eeeeee;
-    margin: 1.2em 0;
+    margin: 5% 0 0;
     padding: 0;
     width: 30%;
   }
@@ -179,6 +179,7 @@ body {
   
   .formContainer .nav{
     text-align: center;
+    margin: 5%;
   }
   
   .formContainer .nav p{
@@ -194,10 +195,7 @@ body {
     font-size: 0.9em;
   }
   
-  /*********** DASHBOARD STYLE ***********/
-  
-  .dashboard-page{}
-  
+  /*********** DASHBOARD STYLE ***********/ 
   .menu-container {
     height: 40px;
     width: 100%;
@@ -384,27 +382,22 @@ body {
     height: 5px;
     width: 90%;
     background: linear-gradient(to right, #FFFF4A, #FF8A00, #FF79E4, #AD0EE8, #0086FF, #00D604);
+    position: absolute;
   }
   
   .top-divider {
-    position: absolute;
     bottom: 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
   
   .bottom-divider {
-    position: absolute;
     top: 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
   
-  /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-  
+  /*** Laptops / Desktops | 1025px to 1280px ***/
   @media (min-width: 1025px) {
     
     body {
@@ -459,11 +452,7 @@ body {
     
   }
   
-  /* 
-    ## Tablet / iPad (portrait)
-    ## 768px - 1024px
-  */
-  
+  /*** Tablet / iPad (portrait) | 768px - 1024px ***/
   @media (min-width: 768px) and (max-width: 1024px) {
     body {
       font-size: 24px;
@@ -471,6 +460,7 @@ body {
     
     .form-input, .button {
       height: 48px;
+      line-height: 48px;
     }
   
     .account-desc-container {
@@ -489,14 +479,9 @@ body {
       width: 100%;
       margin: 0 1%;
     }
-  
   }
   
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  
+  /*** Tablets / iPads (landscape) | 768px - 1024px ***/
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     
     body {
@@ -510,7 +495,7 @@ body {
   
     .section {
       width: 50%;
-      height: 100vh;
+      min-height: 100vh;
     }
   
     .desc-info {
@@ -519,16 +504,11 @@ body {
     }
   
     .formContainer {
-      height: 60%;
       margin: auto;
     }
   
     .desc ul, .usage-logos {
       margin-top: 20px;
-    }
-  
-    .button {
-      padding: 12px;
     }
   
     .account-desc-container {
@@ -551,11 +531,7 @@ body {
     
   }
   
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
+  /*** Small Tablets / Mobile (Landscape) | 481px - 767px ***/
   @media (min-width: 481px) and (max-width: 767px) {
     
     body {
@@ -592,10 +568,7 @@ body {
     .form-input, .button{
       font-size: 12px;
       height: 25px;
-    }
-  
-    .button {
-      padding: 2px;
+      line-height: 25px;
     }
   
     .content {
@@ -610,5 +583,4 @@ body {
     .header-container {
       height: 90px;
     }
-    
   }
